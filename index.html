@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Event Explorer - Tanzania</title>
+    <script src="./script/main.js" defer></script>
+    <!-- style -->
+     <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Local Event Explorer - Tanzania</h1>
+    </header>
+    <main>
+        <section id="search-section">
+            <label for="cityInput">City:</label>
+            <input type="text" id="cityInput" placeholder="e.g., Dar es Salaam">
+            <label for="categorySelect">Category:</label>
+            <select id="categorySelect">
+                <option value="">All Categories</option>
+                <option value="music">Music</option>
+                <option value="workshop">Workshops</option>
+                <option value="festival">Festivals</option>
+            </select>
+            <button id="searchButton">Search Events</button>
+        </section>
+        <section id="eventsContainer">
+            <h2>Upcoming Events</h2>
+            <div id="eventList"></div>
+        </section>
+        <section id="savedEventsContainer">
+            <h2>Saved Events</h2>
+            <div id="savedEventsList"></div>
+        </section>
+    </main>
+</body>
+</html>
