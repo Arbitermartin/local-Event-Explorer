@@ -1,4 +1,4 @@
-const API_KEY = '3pi6DCUXgj7wETvVAvCM0qrvxNGUNfnY';
+const API_KEY = 'aqtAqnt5YFVED7N4wU6ykQdlffCqP4tF';
 const BASE_URL = 'https://app.ticketmaster.com/discovery/v2/';
 
 // Fetch events from Ticketmaster API
