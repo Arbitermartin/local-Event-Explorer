@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;;
     background: #f9f9f9;
     color: #222;
     margin: 0;
@@ -96,6 +96,8 @@ button:hover {
     background-color: #007bff;
     text-align: center;
     padding: 2rem;
+    line-height: 1.5rem;
+    color: white;
     border-radius: 0.3rem;
 }
 .wrapper_container{
@@ -110,7 +112,8 @@ footer{
     background-color: #007bff;
 }
 .footer{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 3rem;
     padding: 2rem;
 
@@ -131,6 +134,10 @@ footer{
 @media (max-width:678px) {
     .wrapper{
         grid-template-columns: 1fr;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        text-align: center;
     }
     
 }
