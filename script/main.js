@@ -4,7 +4,8 @@ const BASE_URL = 'https://app.ticketmaster.com/discovery/v2/';
 // Fetch events from Ticketmaster API
 async function fetchEvents(city, category) {
     try {
-        const url = `${BASE_URL}events.json?apikey=${API_KEY}&countryCode=TZ&city=${encodeURIComponent(city)}&classificationName=${encodeURIComponent(category)}&size=20`;
+        // const url = `${BASE_URL}events.json?apikey=${API_KEY}&countryCode=TZ&city=${encodeURIComponent(city)}&classificationName=${encodeURIComponent(category)}&size=20`;
+        const url = `${BASE_URL}events.json?apikey=${API_KEY}&countryCode=US&city=New York&classificationName=${encodeURIComponent(category)}&size=20`;
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error('Failed to fetch events from Ticketmaster');
@@ -23,7 +24,7 @@ function displayEvents(events) {
     const eventList = document.getElementById('eventList');
     eventList.innerHTML = '';
     if (events.length === 0) {
-        eventList.innerHTML = '<p>No events found for this city and category in Tanzania.</p>';
+        eventList.innerHTML = '<p>No events found for this city and category in USA.</p>';
         return;
     }
     events.forEach(event => {

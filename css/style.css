@@ -77,6 +77,31 @@ button:hover {
     border-radius: 4px;
     cursor: pointer;
 }
+#savedEventsContainer{
+    background-color: #007bff;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+#savedEventsContainer h2{
+    text-align: center;
+    color: white;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 20px 40px;
+    gap: 3rem;
+}
+.wrapper_container{
+    background-color: #007bff;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.3rem;
+}
+.wrapper_container{
+   transition: 0.3s;
+   transform: translate(0.9);
+}
 
 .save-btn:hover {
     background: #218838;
@@ -102,4 +127,10 @@ footer{
         width: 100%;
         margin-right: 0;
     }
+}
+@media (max-width:678px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    
 }
