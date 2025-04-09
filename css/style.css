@@ -19,7 +19,7 @@ nav h1 {
 
 h2 {
     font-size: 20px;
-    color: #555;
+    color: black;
 }
 
 #search-section {
@@ -79,6 +79,7 @@ button:hover {
 }
 #savedEventsContainer{
     background-color: #007bff;
+    border-radius: 0.4rem;
     padding: 2rem;
     margin-bottom: 1rem;
 }
@@ -95,15 +96,12 @@ button:hover {
 .wrapper_container{
     background-color: #007bff;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     line-height: 1.5rem;
     color: white;
     border-radius: 0.3rem;
 }
-.wrapper_container{
-   transition: 0.3s;
-   transform: translate(0.9);
-}
+
 
 .save-btn:hover {
     background: #218838;
@@ -114,6 +112,7 @@ footer{
 .footer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    color: black;
     gap: 3rem;
     padding: 2rem;
 
