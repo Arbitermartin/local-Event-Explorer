@@ -8,18 +8,18 @@ body {
 
 h1 {
     font-size: 24px;
-    color: #007bff;
+    color: #052547;
 }
 nav h1 {
-    background-color: #007bff;
-    color: black;
+    background-color: #052547;
+    color: whitesmoke;
     text-align: center;
     padding: 1.5rem;
 }
 
 h2 {
     font-size: 20px;
-    color: black;
+    color: whitesmoke;
 }
 
 #search-section {
@@ -39,14 +39,14 @@ input, select, button {
 }
 
 button {
-    background: #007bff;
+    background: #0c3868;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #052547
 }
 
 .event-card {
@@ -78,7 +78,7 @@ button:hover {
     cursor: pointer;
 }
 #savedEventsContainer{
-    background-color: #007bff;
+    background-color: #052547;
     border-radius: 0.4rem;
     padding: 2rem;
     margin-bottom: 1rem;
@@ -94,11 +94,11 @@ button:hover {
     gap: 3rem;
 }
 .wrapper_container{
-    background-color: #007bff;
+    background-color: #052547;
     text-align: center;
     padding: 1rem;
     line-height: 1.5rem;
-    color: white;
+    color: whitesmoke;
     border-radius: 0.3rem;
 }
 
@@ -107,15 +107,51 @@ button:hover {
     background: #218838;
 }
 footer{
-    background-color: #007bff;
+    background-color: #052547;
 }
 .footer{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    color: black;
+    grid-template-columns: repeat(3,1fr);
+    color: whitesmoke;
     gap: 3rem;
+    line-height: 1.5rem;
     padding: 2rem;
-
+}
+ ul,li a{
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+}
+ul, li a:hover{
+    color:  rgb(103, 86, 86);
+}
+.social{
+    display: flex;
+    gap: 2rem;
+}
+.social i{
+    background-color: #555;
+    padding: 0.8rem;
+    color: white;
+    border-radius: 0.5rem;
+}
+.social i:hover{
+    background-color: #2c2929;
+}
+.info i{
+    margin-right: 0.8rem;
+    color: white;
+}
+.content{
+    border-top: 3px solid rgb(79, 70, 70);
+    margin: 20px 40px;
+    opacity: 0.8;
+}
+.content p{
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    color: whitesmoke;
 }
 
 
@@ -136,12 +172,13 @@ footer{
     }
     .footer{
         grid-template-columns: 1fr;
-        text-align: center;
+        padding: 2rem;
     }
     .wrapper_container{
         display: block;
         margin: 0 auto;
         max-width: 500px;
     }
+
     
 }
