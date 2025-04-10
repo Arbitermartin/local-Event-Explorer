@@ -138,5 +138,10 @@ footer{
         grid-template-columns: 1fr;
         text-align: center;
     }
+    .wrapper_container{
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+    }
     
 }
